@@ -6,12 +6,12 @@ typedef struct {
     int age;
 } INFO; // definition
 
-int save(INFO* student) {
+void save(INFO* student) {
     std::ofstream saveDat("input.dat");
 
     if (!saveDat) {
         std::cerr << "无法创建文件" << std::endl;
-        return 1;
+        return;
     }
 
     for (int i = 0; i < STUDENT_NUM; i++) {
@@ -19,17 +19,15 @@ int save(INFO* student) {
     }
 
     saveDat.close();
-
-    return 0;
 } // TASK 2
 
-int readAndSave() {
+void readAndSave() {
     std::ifstream readDat("input.dat");
     INFO temp[MAX_STUDENT_NUM];
 
     if (!readDat) {
         std::cerr << "无法打开文件" << std::endl;
-        return 1;
+        return;
     }
 
     for (auto & stu : temp) {
@@ -42,7 +40,7 @@ int readAndSave() {
 
     if (!saveDat) {
         std::cerr << "无法创建文件" << std::endl;
-        return 1;
+        exit(1);
     }
 
     for (int i = STUDENT_NUM - 1; i >= 0; i--) {
@@ -50,8 +48,6 @@ int readAndSave() {
     }
 
     saveDat.close();
-
-    return 0;
 } // TASK 3
 
 int main() {

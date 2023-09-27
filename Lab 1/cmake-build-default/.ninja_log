@@ -1,3 +1,4 @@
 # ninja log v5
-0	314	7173533664799476	CMakeFiles/Lab_1.dir/main.cpp.obj	c67079855865fb2d
-326	441	7173533666046308	Lab_1.exe	f38c5bf6efe5df59
+3	338	7175072659608976	CMakeFiles/Lab_1.dir/main.cpp.obj	c67079855865fb2d
+338	459	7175072660783774	Lab_1.exe	f38c5bf6efe5df59
+6	439	7173580314191159	CMakeFiles/Lab_1.dir/content_2/efficiency_test.cpp.obj	ff62b29478ad21d0
