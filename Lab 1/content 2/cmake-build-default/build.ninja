@@ -46,7 +46,7 @@ build cmake_object_order_depends_target_content_2: phony || CMakeFiles/content_2
 
 build CMakeFiles/content_2.dir/main.cpp.obj: CXX_COMPILER__content_2_unscanned_ E$:/C/Data$ Structure/Lab$ 1/content$ 2/main.cpp || cmake_object_order_depends_target_content_2
   DEP_FILE = CMakeFiles\content_2.dir\main.cpp.obj.d
-  FLAGS = -O0 -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\content_2.dir
   OBJECT_FILE_DIR = CMakeFiles\content_2.dir
 
@@ -59,7 +59,7 @@ build CMakeFiles/content_2.dir/main.cpp.obj: CXX_COMPILER__content_2_unscanned_ 
 # Link the executable content_2.exe
 
 build content_2.exe: CXX_EXECUTABLE_LINKER__content_2_ CMakeFiles/content_2.dir/main.cpp.obj
-  FLAGS = -O0
+  FLAGS = -O3
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\content_2.dir
   POST_BUILD = cd .

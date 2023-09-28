@@ -8,9 +8,9 @@
 #include <iostream>
 #include <fstream>
 
-#define MAX_ID_LENGTH 15
-#define MAX_NAME_LENGTH 10
-#define MAX_STUDENT_NUM 10
-#define STUDENT_NUM 5
+constexpr int MAX_ID_LENGTH = 15;
+constexpr int MAX_NAME_LENGTH = 10;
+constexpr int MAX_STUDENT_NUM = 10;
+constexpr int STUDENT_NUM = 5;
 
 #endif //LAB_1_COMMON_H
