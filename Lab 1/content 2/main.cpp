@@ -28,15 +28,30 @@ int main() {
         dst[i] = new int[2048];
     }
 
-    std::chrono::steady_clock::time_point copyij_t0 = std::chrono::steady_clock::now();
-    copyij(src, dst);
-    std::chrono::steady_clock::time_point copyij_t1 = std::chrono::steady_clock::now();
-    std::cout << "copyij spend time: " << std::chrono::duration<double, std::milli>(copyij_t1 - copyij_t0).count() << "ms" << std::endl;
+    double copyij_t = 0, copyji_t = 0;
 
-    std::chrono::steady_clock::time_point copyji_t0 = std::chrono::steady_clock::now();
-    copyji(src, dst);
-    std::chrono::steady_clock::time_point copyji_t1 = std::chrono::steady_clock::now();
-    std::cout << "copyji spend time: " << std::chrono::duration<double, std::milli>(copyji_t1 - copyji_t0).count() << "ms" << std::endl;
+    for (int i = 0; i < 100; i++) {
+        std::chrono::steady_clock::time_point copyij_t0 = std::chrono::steady_clock::now();
+        copyij(src, dst);
+        std::chrono::steady_clock::time_point copyij_t1 = std::chrono::steady_clock::now();
+
+        std::chrono::steady_clock::time_point copyji_t0 = std::chrono::steady_clock::now();
+        copyji(src, dst);
+        std::chrono::steady_clock::time_point copyji_t1 = std::chrono::steady_clock::now();
+
+        copyij_t += std::chrono::duration<double, std::milli>(copyij_t1 - copyij_t0).count();
+        copyji_t += std::chrono::duration<double, std::milli>(copyji_t1 - copyji_t0).count();
+    }
+
+    std::cout << "copyij spend time: " << copyij_t / 100 << "ms" << std::endl;
+    std::cout << "copyji spend time: " << copyji_t / 100 << "ms" << std::endl;
+
+    for (int i = 0; i < 2048; i++) {
+        delete[] src[i];
+        delete[] dst[i];
+    }
+    delete[] src;
+    delete[] dst;
 
     return 0;
 }
