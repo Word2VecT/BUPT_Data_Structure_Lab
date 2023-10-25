@@ -1,3 +1,0 @@
-E:/C/Data Structure/Lab 1/cmake-build-default/CMakeFiles/Lab_1.dir
-E:/C/Data Structure/Lab 1/cmake-build-default/CMakeFiles/edit_cache.dir
-E:/C/Data Structure/Lab 1/cmake-build-default/CMakeFiles/rebuild_cache.dir
