@@ -1,9 +1,13 @@
 # BUPT_Data_Structure_Lab
 
-Persenal solution for BUPT Data Structure Class Labs.
+Personal solution for BUPT Data Structure Class Labs.
 
 ## Lab 1: Basic Programming and Algorithm Understanding
 
-## Lab 2: Linear Table-Stack-String Integrated Application
+- Content 1: Struct and File
 
-    A easy code editor.
+- Content 2: Algorithm Execution Efficiency Measurement and Analysis
+
+## Lab 2: Linear List & Stack & String Integrated Application
+
+- A Easy Code Editor
