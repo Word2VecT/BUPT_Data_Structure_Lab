@@ -8,6 +8,7 @@
 #include <iostream>
 #include <algorithm>
 #include <fstream>
+#include <vector>
 
 #define OK 1
 #define ERROR (-1)
