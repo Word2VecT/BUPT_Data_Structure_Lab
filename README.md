@@ -1,6 +1,6 @@
 # BUPT_Data_Structure_Lab
 
-Personal solution for BUPT Data Structure Class Labs.
+Personal Solution for BUPT Data Structure Class Labs.
 
 ## Lab 1: Basic Programming and Algorithm Understanding
 
