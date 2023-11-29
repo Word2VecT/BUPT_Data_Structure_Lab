@@ -11,3 +11,7 @@ Personal Solution for BUPT Data Structure Class Labs.
 ## Lab 2: Linear List & Stack & String Integrated Application
 
 - A Easy Code Editor
+
+## Lab 3: Tree - Huffman Encoder / Decoder
+
+- Construct a Huffman tree based on the actual statistics of character set and frequency, and then encode and decode
